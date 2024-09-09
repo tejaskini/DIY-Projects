@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+}
+.container{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    transform: rotateX(65deg);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.circle{
+    border-radius: 200px;
+    /* border-color:pink; */
+    position: absolute;
+    animation: circle 3s infinite;
+}
+@keyframes circle {
+    50%{
+        transform: translateZ(180px);
+    }
+    
+}
+#c1{
+    height: 400px;
+    width: 400px;
+    border: 5px solid rgb(236, 51, 26);
+    animation-delay: .9s;
+
+}
+#c2{
+    height: 360px;
+    width: 360px;
+    border: 5px solid green;
+    animation-delay: .8s;
+}
+#c3{
+    height: 320px;
+    width: 320px;
+    border: 5px solid rgb(13, 130, 197);
+    animation-delay: .7s;
+
+}
+#c4{
+    height: 280px;
+    width: 280px;
+    border: 5px solid rgb(206, 21, 181);
+    animation-delay: .6s;
+}
+#c5{
+    height: 240px;
+    width: 240px;
+    border: 5px solid rgb(242, 245, 98);
+    animation-delay: .5s;
+
+}
+#c6{
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(80, 175, 167);
+    animation-delay: .4s;
+}
+#c7{
+    height: 160px;
+    width: 160px;
+    border: 5px solid rgb(206, 21, 181);
+    animation-delay: .3s;
+}
+#c8{
+    height: 120px;
+    width: 120px;
+    border: 5px solid rgb(255, 224, 251);
+    animation-delay: .2s;
+
+}
+#c9{
+    height: 80px;
+    width: 80px;
+    border: 5px solid rgb(206, 21, 181);
+    animation-delay: .1s;
+
+}
+#c10{
+    height: 40px;
+    width: 40px;
+    border: 5px solid rgb(206, 21, 181);
+}
