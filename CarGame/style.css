@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: url(nature.jpgs); */
+    /* background-color: rgb(66, 66, 90); */
+    overflow: hidden;
+}
+#back{
+    background-image: url(nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -25vh;
+    background-attachment: fixed;
+    width: auto;
+    height: 450px;
+}
+#road{
+/* background-image: url(roadImg.png); */
+border: 2px solid rgb(194, 192, 192);;
+background-color: rgb(92, 92, 92);
+height: 250px;
+
+
+
+}
+#devider{
+    border: 3px dashed rgb(255, 255, 255);
+    margin-top: 22px;
+}
+
+#img
+{
+    width: 20vw;
+    /* height: 100px; */
+}
+.start
+{
+
+    border: 0px solid black;
+    margin: 10px 50vw;
+    padding: 8px;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(121, 121, 121);
+    
+}
+.start:active
+{
+    font-size: 23px;
+    background-color: rgb(76, 233, 76);
+}
+.stop{
+    border: 0px solid black;
+    margin: 10px 50vw;
+    padding: 8px;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(121, 121, 121);
+}
+.stop:active
+{
+    font-size: 23px;
+    background-color: red;
+}
+
