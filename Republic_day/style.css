@@ -1,0 +1,145 @@
+body{
+    /* background-image: url(india1.jpg); */
+    background-image: url(india.jpg);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.container{
+    /* background-color: rgba(235, 242, 245, 0.349); */
+    /* color: lightpink; */
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(134, 152, 180, 0.13); */
+}
+
+/* Making our Tiranga */
+.Tiranga{
+    /* border: 2px dashed white; */
+    height: 50%;
+    width: 50%;
+    padding: 25px 25px;
+    /* margin: 25vh 45vh; */
+ 
+    /* background-color: rgba(79, 79, 173, 0.39); */
+
+    /* NOTE :-  The use of linear gradient in css*/
+    /* background-image: linear-gradient(red,yellow); */
+    /* NOTE :-  This is by default color top to bottom means(top  side red and bottom side yellow)*/
+    
+    /* background-image: linear-gradient(to top ,red,yellow); */
+
+     /* NOTE :-  if we want this color from bottom(red) to top(yellow) */
+   
+
+  /* NOTE :-   similar for the left and right side */
+
+    /* background-image: linear-gradient(to left , red,yellow); */
+     /* background-image: linear-gradient(to right , red,yellow); */
+
+     /* NOTE :-   If we want color from the corner side then  */
+     /* background-image: linear-gradient(to bottom left,red,yellow); */
+     /* background-image: linear-gradient(to top right,red,yellow); */
+
+     /*  NOTE :-  If you want to rotate the the color you can rotate the about the angle */
+
+     background-image: linear-gradient(0deg, rgb(8, 255, 8),rgba(255, 255, 255, 0.493),rgb(255, 127, 7));
+     border-radius:8px;
+     box-shadow: 0 35px 35px rgba(0, 0, 0.6, 0.8);
+
+
+  
+}
+.Tiranga:hover{
+   
+}
+
+/* Making Ashoka chakra */
+.circle{
+    /* border: 2px solid black; */
+    background-image: url(chakra.jpg);
+    background-repeat: no-repeat;
+    background-position-x:50%;
+    background-position-y:60% ;
+    background-size:228%;
+    /* background-position: -50px 0px; */
+    height: 40%;
+    width: 22%;
+    margin: 10.5vh 34vh;
+    border-radius: 50%;
+    
+
+}
+
+/* Making Our India */
+.india{
+    /* border: 2px solid black; */
+    border: none;
+    background-image: url(p1.jpg);
+    background-size: cover;
+    border-radius: 1rem;
+    height: 70%;
+    width: 40%;
+    margin: -300px 15px;
+    float: right;
+    transition: 0.5s;
+}
+
+.india:hover{
+    cursor: pointer;
+    background-image: url(p2.jpg);
+    background-size: cover;
+}
+ 
+.msg{
+    /* border: 2px solid black; */
+    position: absolute;
+    margin: 60px 120px;
+}  
+.msg span{
+    font-size: 65px;
+    font-weight: bold;
+    color: rgb(230, 141, 9);
+} 
+span.r{
+    color: rgb(0, 44, 138);
+    background-image:repeating-linear-gradient(to bottom,rgba(255, 255, 255, 0),rgba(255, 252, 250, 0.753),rgba(194, 146, 0, 0))
+}
+
+.vap span{
+    position: relative;
+    bottom: 50px;
+    display: inline-block;
+    margin:0 2px 50px;
+    min-width: 8px;
+    height: 65px;
+    background-image: linear-gradient(0deg,green,white,orange);
+    border-radius: 50%;
+    animation: animate 4s linear infinite;
+    opacity: 0;
+    /* filter: blur(0px); */
+    animation-delay: calc(var(--i)*-0.8s);
+
+}
+@keyframes animate
+{
+   0%{
+       transform: translateY(0) scaleX(1);
+       opacity: 0;
+   }
+   15%{
+       opacity: 1;
+   } 
+   50%{
+       transform: translateY(-150px) scaleX(5);
+   } 
+   95%{
+       opacity: 0.001;
+   }
+   100%{
+       transform: translateY(-300px) scaleX(10);
+   } 
+}
+
